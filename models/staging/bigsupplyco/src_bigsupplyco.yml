@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bigsupplyco
+    database: RAW_BIGSUPPLYCO
+    schema: RAW_BIGSUPPLYCO_SCHEMA
+    tables:
+      - name: categories
+      - name: customers
+      - name: departments
+      - name: orders
+      - name: products
