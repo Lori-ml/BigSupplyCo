@@ -11,13 +11,13 @@ customers as (
     select
           customer_id 
         , customer_city 
-        , customer_country 
+        , case when  customer_country = 'EE. UU.' then 'United States' else customer_country end as customer_country
         , customer_fname 
         , customer_lname 
         , customer_segment 
         , customer_state 
         , customer_street 
-        , customer_zipcode 
+        , {{ add_leading_zeros('customer_zipcode') }} AS customer_zipcode 
 
     from source
 
