@@ -6,14 +6,12 @@ source as (
 
 ),
 
-renamed as (
+category as (
 
-    select
-        category_id,
-        category_name
-
+    select *
     from source
 
 )
 
-select * from renamed
+select  *
+from category

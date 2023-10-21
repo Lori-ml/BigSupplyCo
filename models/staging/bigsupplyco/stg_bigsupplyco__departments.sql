@@ -6,16 +6,11 @@ source as (
 
 ),
 
-renamed as (
+departments as (
 
-    select
-        department_id,
-        department_name,
-        latitude,
-        longitude
-
+    select  *
     from source
 
 )
 
-select * from renamed
+select * from departments
