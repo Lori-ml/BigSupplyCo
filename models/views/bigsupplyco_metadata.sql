@@ -5,72 +5,89 @@
 }}
 
 
-SELECT 'MARKET' AS Column_Name, 'The market or marketplace where the order was placed.' AS Description
-UNION
-SELECT 'ORDER_CITY', 'The city where the order was placed.'
-UNION
-SELECT 'ORDER_COUNTRY', 'The country where the order was placed.'
-UNION
-SELECT 'ORDER_REGION', 'The region within the country where the order was placed.'
-UNION
-SELECT 'ORDER_STATE', 'The state or province within the region where the order was placed.'
-UNION
-SELECT 'ORDER_STATUS', 'The status of the order (e.g., processing, shipped, delivered).'
-UNION
-SELECT 'ORDER_ZIPCODE', 'The ZIP code of the order location.'
-UNION
-SELECT 'ORDER_ITEM_DISCOUNT', 'The discount applied to an order item.'
-UNION
-SELECT 'ORDER_ITEM_DISCOUNT_RATE', 'The discount rate applied to an order item.'
-UNION
-SELECT 'ORDER_ITEM_QUANTITY', 'The quantity of the order item.'
-UNION
-SELECT 'SALES', 'The total sales value of the order.'
-UNION
-SELECT 'ORDER_ITEM_TOTAL', 'The total value of the order item.'
-UNION
-SELECT 'ORDER_PROFIT', 'The profit generated from the order.'
-UNION
-SELECT 'TYPE', 'The type of the order.'
-UNION
-SELECT 'DAYS_FOR_SHIPPING_REAL', 'The actual number of days taken for shipping.'
-UNION
-SELECT 'DAYS_FOR_SHIPMENT_SCHEDULED', 'The scheduled number of days for shipment.'
-UNION
-SELECT 'DELIVERY_STATUS', 'The status of order delivery.'
-UNION
-SELECT 'LATE_DELIVERY_RISK', 'Risk assessment of late delivery.'
-UNION
-SELECT 'ORDER_DATE', 'The date the order was placed.'
-UNION
-SELECT 'CATEGORY_NAME', 'The name of the product category.'
-UNION
-SELECT 'CUSTOMER_CITY', 'The city of the customer.'
-UNION
-SELECT 'CUSTOMER_COUNTRY', 'The country of the customer.'
-UNION
-SELECT 'CUSTOMER_EMAIL', 'The email address of the customer.'
-UNION
-SELECT 'CUSTOMER_FNAME', 'The first name of the customer.'
-UNION
-SELECT 'CUSTOMER_LNAME', 'The last name of the customer.'
-UNION
-SELECT 'CUSTOMER_PASSWORD', 'The password associated with the customer account.'
-UNION
-SELECT 'CUSTOMER_SEGMENT', 'The segment or category the customer belongs to.'
-UNION
-SELECT 'CUSTOMER_STATE', 'The state or province of the customer.'
-UNION
-SELECT 'CUSTOMER_STREET', 'The street address of the customer.'
-UNION
-SELECT 'CUSTOMER_ZIPCODE', 'The ZIP code of the customer.'
-UNION
-SELECT 'PRODUCT_DESCRIPTION', 'Description of the product.'
-UNION
-SELECT 'PRODUCT_IMAGE', 'Image of the product.'
-UNION
-SELECT 'PRODUCT_NAME', 'The name of the product.'
-UNION
-SELECT 'PRODUCT_PRICE', 'The price of the product.'
-UNION
-SELECT 'PRODUCT_STATUS', 'The status of the product (e.g., available, out of stock).'
+SELECT 'ORDER_ID' AS Column_Name, 'Unique identifier for an order' AS Description
+UNION ALL
+SELECT 'ORDER_ITEM_CARDPROD_ID', 'ID of the card product associated with an order item'
+UNION ALL
+SELECT 'ORDER_CUSTOMER_ID', 'ID of the customer placing the order'
+UNION ALL
+SELECT 'ORDER_DEPARTMENT_ID', 'ID of the department associated with the order'
+UNION ALL
+SELECT 'MARKET', 'Market associated with the order'
+UNION ALL
+SELECT 'ORDER_CITY', 'City where the order is placed'
+UNION ALL
+SELECT 'ORDER_COUNTRY', 'Country where the order is placed'
+UNION ALL
+SELECT 'ORDER_REGION', 'Region where the order is placed'
+UNION ALL
+SELECT 'ORDER_STATE', 'State where the order is placed'
+UNION ALL
+SELECT 'ORDER_STATUS', 'Status of the order'
+UNION ALL
+SELECT 'ORDER_ZIPCODE', 'Zip code associated with the order'
+UNION ALL
+SELECT 'ORDER_ITEM_DISCOUNT', 'Discount amount applied to an order item'
+UNION ALL
+SELECT 'ORDER_ITEM_DISCOUNT_RATE', 'Discount rate applied to an order item'
+UNION ALL
+SELECT 'ORDER_ITEM_ID', 'ID of an order item'
+UNION ALL
+SELECT 'ORDER_ITEM_QUANTITY', 'Quantity of the order item'
+UNION ALL
+SELECT 'SALES', 'Sales amount associated with the order item'
+UNION ALL
+SELECT 'ORDER_ITEM_TOTAL', 'Total amount for the order item'
+UNION ALL
+SELECT 'ORDER_PROFIT', 'Profit associated with the order item'
+UNION ALL
+SELECT 'TYPE', 'Type of the order'
+UNION ALL
+SELECT 'DAYS_FOR_SHIPPING_REAL', 'Number of days taken for real shipping'
+UNION ALL
+SELECT 'DAYS_FOR_SHIPMENT_SCHEDULED', 'Number of days scheduled for shipment'
+UNION ALL
+SELECT 'DELIVERY_STATUS', 'Status of the delivery'
+UNION ALL
+SELECT 'LATE_DELIVERY_RISK', 'Risk assessment for late delivery'
+UNION ALL
+SELECT 'ORDER_DATE', 'Date of the order'
+UNION ALL
+SELECT 'CATEGORY_NAME', 'Name of the category associated with the product'
+UNION ALL
+SELECT 'CUSTOMER_ID', 'Unique identifier for a customer'
+UNION ALL
+SELECT 'CUSTOMER_CITY', 'City where the customer is located'
+UNION ALL
+SELECT 'CUSTOMER_COUNTRY', 'Country where the customer is located'
+UNION ALL
+SELECT 'CUSTOMER_EMAIL', 'Email address of the customer'
+UNION ALL
+SELECT 'CUSTOMER_FNAME', 'First name of the customer'
+UNION ALL
+SELECT 'CUSTOMER_LNAME', 'Last name of the customer'
+UNION ALL
+SELECT 'CUSTOMER_PASSWORD', 'Password of the customer'
+UNION ALL
+SELECT 'CUSTOMER_SEGMENT', 'Segment to which the customer belongs'
+UNION ALL
+SELECT 'CUSTOMER_STATE', 'State where the customer is located'
+UNION ALL
+SELECT 'CUSTOMER_STREET', 'Street address of the customer'
+UNION ALL
+SELECT 'CUSTOMER_ZIPCODE', 'Zip code of the customer'
+UNION ALL
+SELECT 'PRODUCT_CARD_ID', 'ID of the product card'
+UNION ALL
+SELECT 'PRODUCT_CATEGORY_ID', 'ID of the product category'
+UNION ALL
+SELECT 'PRODUCT_DESCRIPTION', 'Description of the product'
+UNION ALL
+SELECT 'PRODUCT_IMAGE', 'Image associated with the product'
+UNION ALL
+SELECT 'PRODUCT_NAME', 'Name of the product'
+UNION ALL
+SELECT 'PRODUCT_PRICE', 'Price of the product'
+UNION ALL
+SELECT 'PRODUCT_STATUS', 'Status of the product'
+

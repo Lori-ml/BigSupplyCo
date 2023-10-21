@@ -19,10 +19,10 @@ categories as
 
 ) 
 
-select o.* , c.category_name
+select o.* , c.CATEGORY_NAME
 from orders o 
 join products p 
-on o.order_item_cardprod_id = p.product_card_id 
+on o.order_item_cardprod_id = p.product_card_id
 join categories c
-on p.product_category_id = c.category_id 
+on p.product_category_id = c.category_id
 
