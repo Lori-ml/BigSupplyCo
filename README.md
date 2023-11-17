@@ -34,4 +34,8 @@ _BigSupplyCo/models/views_ -> The file in this folder creates a view with the ne
 
 _BigSupplyCo/dbt_project.yml_ -> Project configuration
 
+## Data
+
+Use CSV files uploaded in this project. For Orders.csv only a small portion of data has been uploaded due to size constrains. 
+
 [DBT documentation ](https://docs.getdbt.com/docs/introduction)
