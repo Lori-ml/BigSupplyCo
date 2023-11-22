@@ -1,6 +1,6 @@
 ## Project description
 
-This directory uses unprocessed information related to BigSupplyCo and constructs a compact DataMart through the use of DBT. A view has been created atop this DataMart, which aggregates data from fact and dimension tables, thereby simplifying data retrieval for external applications.
+This directory uses unprocessed information related to BigSupplyCo and constructs a DataMart through the use of DBT. A view has been created atop this DataMart, which aggregates data from fact and dimension tables, thereby simplifying data retrieval for external applications.
 
 
 
